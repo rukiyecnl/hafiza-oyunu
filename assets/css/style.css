@@ -1,0 +1,101 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root {
+    --eslendi-color: #FDA214;
+    --eslenmedi-color: #304859;
+
+    --eslenme-tamamlandiMi-color: var(--eslenmedi-color);
+}
+.eslendi {
+    --eslenme-tamamlandiMi-color: var(--eslendi-color);
+}
+body{
+    background: #FCFCFC;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-style: normal;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    width: 1440px;
+    padding: 67px 165px 70px 165px;
+    flex-direction: column;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p{
+        color: #152938;
+        font-family: "Atkinson Hyperlegible";
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+}
+.restart {
+    width: 127px;
+    height: 52px;
+    border-radius: 26px;
+    background: #FDA214;
+    border: none;
+    color: #FCFCFC;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+.newGame {
+    width: 149px;
+    height: 52px;
+    border-radius: 26px;
+    background: #DFE7EC;
+    color: #304859;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    border: none;
+}
+.sayilar{
+    margin: 0 auto;
+    margin-top: 119px;
+    width: 532px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.numb {
+    position: relative;
+    width: 118px;
+    height: 118px;
+    border-radius: 59px;
+    background-color: var(--eslenme-tamamlandiMi-color);
+}
+.value {
+    position: absolute;
+    width: 118px;
+    height: 118px;
+    border-radius: 59px;
+    z-index: 1;
+}
+.timeAndMove{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 126px;
+}
+.time, .move {
+    display: flex;
+    justify-content: space-between;
+    width: 255px;
+    height: 72px;
+    border-radius: 10px;
+    background: #DFE7EC;
+    padding: 25px 21px;
+}
